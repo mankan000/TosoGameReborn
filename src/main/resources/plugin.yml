@@ -1,0 +1,35 @@
+name: TosoGameReborn
+main: jp.madeirar.tosogamereborn.TosoGameReborn.TosoGameReborn
+version: 0.0.1
+website: www.mincra.jp
+authors: [peko,mankan000]
+description: Enjoy the TosoGame
+database: false
+prefix: TosoGame
+load: POSTWORLD
+softdepend: [Vault,MythicMobs,MythicAPI,WorldGuard]
+#softdependは先に起動すべきプラグイン
+#depend: [,]依存プラグイン一覧
+commands:
+  toso:
+    description: Enjoy the TosoGame
+    usage: /<command> ? - list subcommands
+    permission: toso.basic
+    alias: [tg]
+permissions:
+    toso.basic:
+      description: Basic TosoGame Permission for all player
+      default: true
+    toso.youtuber:
+      description: For Youtuber Permission. with /toso rec
+      default: op
+    toso.admin:
+      description: For admin Permission.
+      default: op
+    toso.toso:
+      description: For TosoPlayer.
+      default: false
+    toso.hunter:
+      description: For HunterPlayer.
+      default: false
+#
