@@ -18,8 +18,8 @@ import org.bukkit.scoreboard.Team;
 public class TosoGameReborn extends JavaPlugin implements Listener {
 
 	public static Scoreboard score;
-    public ScoreboardManager sbmanager = Bukkit.getScoreboardManager();//まずスコアボードマネージャーを取得します
-    public Scoreboard sboard = sbmanager.getMainScoreboard();//次にスコアボードを取得します
+    public static ScoreboardManager sbmanager = Bukkit.getScoreboardManager();//まずスコアボードマネージャーを取得します
+    public static Scoreboard sboard = sbmanager.getMainScoreboard();//次にスコアボードを取得します
     public static List<Team> toso = new ArrayList<Team>();
     public static List<Team> hunter = new ArrayList<Team>();
     public static List<Team> jail = new ArrayList<Team>();
